@@ -1,6 +1,7 @@
 var server = require("./server");
 var router = require("./router");
 var fs = require("fs");
+var authHelper = require("./authHelper");
 
 var handle = {};
 handle["/"] = home;
@@ -23,6 +24,6 @@ function home(response, request) {
 	response.end();
   });*/
   response.writeHead(200, {"Content-Type": "text/html"});
-  response.write('<p><a href="#">Sign In</a></p>');
+  response.write('<p><a href="'+ authHelper.getAuthUrl() +'">Sign In</a></p>');
   response.end();
 }

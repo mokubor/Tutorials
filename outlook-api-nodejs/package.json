@@ -4,8 +4,11 @@
   "description": "Issues Assigned to Support Team Members via Email",
   "main": "index.js",
   "scripts": {
-	"start": "node index.js"
+    "start": "node index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "simple-oauth2": "^0.8.0"
+  }
 }
