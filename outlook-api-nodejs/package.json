@@ -1,0 +1,11 @@
+{
+  "name": "issues-assigned",
+  "version": "1.0.0",
+  "description": "Issues Assigned to Support Team Members via Email",
+  "main": "index.js",
+  "scripts": {
+	"start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

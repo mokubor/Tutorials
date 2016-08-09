@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<body ng-app="myApp">
+
+<div ng-controller="myCntrl">
+
+<h1><p>Welcome</p></h1>
+<h4><p>Click the button to proceed to the login page</p><h4>
+<button ng-click="redirect()">Begin</button>
+
+</div>
+
+<script>
+angular.module('myApp', [])
+   .controller('myCntrl', ['$scope',function($scope) {
+        $scope.redirect = function(){
+          window.location = "http://www.google.com";
+        };
+    }]);
+
+</script>
+
+</body>
+</html>
