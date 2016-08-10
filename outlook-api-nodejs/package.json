@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "node-outlook": "^1.1.6",
     "simple-oauth2": "^0.8.0"
   }
 }
