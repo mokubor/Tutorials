@@ -11,6 +11,7 @@ var redirectUri = "http://localhost:8150/authorize";
 
 // The scopes the app requires
 var scopes = [ "openid",
+               "offline_access",
                "https://outlook.office.com/mail.read" ];
     
 function getAuthUrl() {
@@ -24,7 +25,7 @@ function getAuthUrl() {
 
 function getTokenFromCode(auth_code, callback, response) {
   var token;
-  oath2.authCode.getToken({
+  oauth2.authCode.getToken({
     code: auth_code,
     redirect_uri: redirectUri,
     scope: scopes.join(" ")
